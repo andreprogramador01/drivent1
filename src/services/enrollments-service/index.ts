@@ -20,7 +20,7 @@ async function getAddressFromCEP(cep?: string) {
   if (!result.data) {
     throw notFoundError();
   }
-  return result.status;
+  return result.data;
 }
 
 async function getOneWithAddressByUserId(userId: number): Promise<GetOneWithAddressByUserIdResult> {
